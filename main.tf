@@ -31,7 +31,7 @@ resource "vault_approle_auth_backend_role" "app" {
   secret_id_ttl      = var.approle_secret_id_ttl
   secret_id_num_uses = var.approle_secret_id_num_uses
 
-  # CIDR binding is unused by agreement; the Secret ID is usable from any source.
+  # CIDR binding is unused by test agreement; the Secret ID is usable from any source.
   secret_id_bound_cidrs = []
   token_bound_cidrs     = []
 }
