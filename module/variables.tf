@@ -7,5 +7,5 @@ variable "k8s_cluster_name" {
 variable "k8s_cluster_public_signing_keys" {
   description = "Public signing keys used by Vault to validate JWTs issued for the Kubernetes cluster."
   type        = list(string)
-  default     = ['test','test2']
+  default     = ["test","test2"]
 }
